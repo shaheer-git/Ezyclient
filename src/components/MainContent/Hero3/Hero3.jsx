@@ -4,7 +4,7 @@ function Hero3() {
     return (
         <div className='h-fit lg:h-screen'>
             <div className='h-full' style={{ backgroundColor: '#FFFBF4' }}>
-                <div className='h-2/6 flex items-center justify-center pt-2'>
+                <div className='h-2/6 flex items-center justify-center pt-10 pb-4 lg:pt-2'>
                     <h1 className='font-semibold text-3xl lg:text-6xl' style={{ color: '#5DA1E4' }}>Why are we the perfect fit?</h1>
                 </div>
                 <div className='flex flex-col items-center justify-center h-4/6 lg:h-3/6 flex-nowrap'>

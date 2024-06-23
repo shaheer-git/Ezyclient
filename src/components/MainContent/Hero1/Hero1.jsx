@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import scooter from '../../../assets/pngwing.png'
 import './Hero1.css'
 function Hero1() {
+  Notific.Loading.Dots("Please wait...");
   useEffect(() => {
     const timer = setTimeout(() => {
       Notific.Loading.Remove();
@@ -14,7 +15,7 @@ function Hero1() {
   return (
     <div className='relative h-[90vh]'>
       <div className='h-3/5 flex pt-8' style={{ backgroundColor: '#FFFBF4' }}>
-        <div className='flex items-center justify-between pl-[4px] md:w-screen w-full'>
+        <div className='flex items-center justify-between pl-[6px] md:w-screen w-full'>
           <div className='ezyText w-2/5'>
             <svg width="135" height="170" viewBox="0 0 362 177" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M91.664 177H3.344V44.136L25.616 22.376H0.272001V0.103989H91.664V22.376H28.688V85.352L47.376 66.408H91.664V88.424H28.688V154.728H91.664V177ZM219.706 177H118.586V121.704L194.362 46.184V22.376H118.586V0.103989H219.706V54.888L143.674 131.176V154.728H219.706V177ZM362 88.424L339.728 110.696H319.248V177H293.904V110.696H273.424L251.408 88.424V0.103989H276.752V88.424H336.656V0.103989H362V88.424Z" fill="#74A1CE" />
@@ -40,7 +41,7 @@ function Hero1() {
         </div>
       </div>
       <div className='h-2/5 flex items-start justify-center' style={{ backgroundColor: '#BFDBF7' }}>
-        <img src={scooter} alt="2 wheeler scrap bangalore" className='absolute top-1/3 sm:w-1/2 w-max' data-aos="fade-left" />
+        <img src={scooter} alt="2 wheeler scrap bangalore" className='absolute top-1/3 sm:w-1/2 w-max' />
       </div>
     </div>
   )

@@ -70,11 +70,11 @@ body {
 @media only screen and (max-width: 492px) {
 
     .ezyText {
-        justify-content: start !important;
+        justify-content: center !important;
     }
 
     .text-container {
-        justify-content: end !important;
+        justify-content: center !important;
     }
 }
 

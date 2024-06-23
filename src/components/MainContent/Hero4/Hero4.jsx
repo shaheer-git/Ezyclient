@@ -2,18 +2,17 @@ import React from 'react'
 
 function Hero4() {
     return (
-        <div className='h-screen' style={{ backgroundColor: '#BFDBF7' }}>
+        <div className='h-fit' style={{ backgroundColor: '#BFDBF7' }}>
             <div className='h-2/6 flex flex-col items-center justify-around'>
                 <div className='flex items-center justify-center'>
-                    <h1 className='font-semibold text-3xl lg:text-6xl' style={{ color: '#FFFBF4' }}>It's simple to start.</h1>
+                    <h1 className='font-semibold text-3xl lg:text-6xl pt-10' style={{ color: '#FFFBF4' }}>It's simple to start.</h1>
                 </div>
                 <div className='flex items-center justify-center text-center'>
-                    <p className='font-semibold text-lg w-4/6' style={{ color: '#153E67' }}>Say goodbye to scrap problems! Our hassle-free process offers instant quotes and free doorstep collection, making it easy to get started.</p>
+                    <p className='font-semibold text-lg lg:w-4/6' style={{ color: '#153E67' }}>Say goodbye to scrap problems! Our hassle-free process offers instant quotes and free doorstep collection, making it easy to get started.</p>
                 </div>
             </div>
-            <div className='flex items-center justify-center h-3/6 pt-14 flex-wrap' data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom">
-                <div className='flex flex-col items-center justify-center p-4'>
+            <div className='flex items-center justify-center h-3/6 pt-14 flex-wrap'>
+                <div className='flex flex-col items-center justify-center p-4' data-aos="fade-up">
                     <div className='p-4'>
                         <svg width="230" height="230" viewBox="0 0 275 266" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M189.169 22.0363C190.67 12.8669 184.453 4.21726 175.284 2.71675C166.114 1.21623 157.464 7.43308 155.964 16.6025C154.463 25.7718 160.68 34.4215 169.85 35.922C179.019 37.4225 187.669 31.2057 189.169 22.0363Z" fill="#EBEBEB" />
@@ -263,7 +262,7 @@ function Hero4() {
                     <div style={{ color: '#153E67' }} className='w-3/4 text-center'>Arrange your appointment
                         smoothly today.</div>
                 </div>
-                <div className='flex flex-col-reverse sm:flex-col items-center justify-center p-4'>
+                <div className='flex flex-col-reverse sm:flex-col items-center justify-center p-4' data-aos="fade-up">
                     <div className='font-semibold text-xl' style={{ color: '#FFFBF4' }}>Immediate Analysis</div>
                     <div style={{ color: '#153E67' }} className='w-3/4 text-center'>Get evaluations instantly for your convenience.</div>
                     <div className='p-4'>
@@ -478,7 +477,7 @@ function Hero4() {
                         </svg>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center p-4'>
+                <div className='flex flex-col items-center justify-center p-4' data-aos="fade-up">
                     <div className='p-4'>
                         <svg width="230" height="230" viewBox="0 0 275 263" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M65.8596 17.8223H41.3115V25.6364H65.8596V17.8223Z" fill="#EBEBEB" />

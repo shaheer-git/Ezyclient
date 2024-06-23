@@ -9,6 +9,7 @@ function Hero2() {
         email: '',
         phone: '',
         city: '',
+        area: '',
         pincode: '',
         vehicleType: '',
         vehicleModel: '',
@@ -26,7 +27,12 @@ function Hero2() {
     const handleSubmit = async (e) => {
         Notific.Loading.Dots('Please Wait...');
         e.preventDefault();
-        formData.vehicleType = (!formData.vehicleType) ? '2 Wheeler': formData.vehicleType;
+        if (!/^(\+91)?\d{10}$/.test(formData.phone)) {
+            Notific.Confirm.Show("Invalid Phone Number", "Please enter a valid phone number", "Okay");
+            Notific.Loading.Remove();
+            return;
+        }
+        formData.vehicleType = (!formData.vehicleType) ? '2 Wheeler' : formData.vehicleType;
         let response = await makeAPIcall('POST', '/createUser', formData, '');
         if (response.status === "success") {
             Notific.Confirm.Show("Thank you for choosing EzyScrap!", "Together, we are creating a better 🌍... We will get back to you shortly.", "Okay")
@@ -36,12 +42,13 @@ function Hero2() {
                 email: '',
                 phone: '',
                 city: '',
+                area: '',
                 pincode: '',
                 vehicleType: '',
                 vehicleModel: '',
                 vehicleCompany: '',
             })
-        }else {
+        } else {
             Notific.Confirm.Show("Something went wrong!", response.error, "Okay")
         }
     };
@@ -54,7 +61,7 @@ function Hero2() {
                 <div className='w-auto' data-aos="zoom-in-up">
                     <div className="container">
                         <form onSubmit={handleSubmit} className="form">
-                            <h1 className='text-xl'>Complete This Form for a Quick Call Back!</h1>
+                            <h1 className='text-xl'>Complete this form for a quick call back!</h1>
                             <div className='flex sm:flex-row flex-col items-center'>
                                 <input
                                     type="text"
@@ -110,14 +117,21 @@ function Hero2() {
                                 />
                             </div>
                             <div>
-
+                                <input
+                                    type="text"
+                                    name="area"
+                                    placeholder="Area / Land mark (Eg: Kormangala 7 block, near nexus mall..)*"
+                                    value={formData.area}
+                                    onChange={handleChange}
+                                    required
+                                />
                                 <input
                                     type="text"
                                     name="vehicleType"
-                                    placeholder="Vehicle Type*"
-                                    value='2 Wheeler'
+                                    placeholder="Vehicle Type* (2 Wheeler, 4 Wheeler, etc.)"
+                                    value={formData.vehicleType}
+                                    onChange={handleChange}
                                     required
-                                    disabled
                                 />
                                 <input
                                     type="text"
