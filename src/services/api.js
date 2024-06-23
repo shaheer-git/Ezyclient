@@ -1,4 +1,5 @@
-let baseURL = "http://localhost:3001";
+// let baseURL = "http://localhost:3001";
+let baseURL = "https://ezyserver.onrender.com";
 export async function makeAPIcall(method, apiEndpoint, reqData, params, isFormData) {
     let url = params ? baseURL + apiEndpoint + params : baseURL + apiEndpoint;
     let requestOptions = prepareRequestData(reqData, method, isFormData);
