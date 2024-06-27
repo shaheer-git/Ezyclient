@@ -36,6 +36,7 @@ function Footer() {
             let value = document.getElementById('NXConfirmValidationInput').value;
             await sendFeedback(value);
         })
+        Notific.Loading.Remove();
     }
     const sendUnHappyFeedback = async () => {
         Notific.Loading.Dots("Loading..");
@@ -43,6 +44,7 @@ function Footer() {
             let value = document.getElementById('NXConfirmValidationInput').value;
             await sendFeedback(value);
         })
+        Notific.Loading.Remove();
     }
     return (
         <div className='h-auto lg:h-[50vh] w-full lg:w-screen bg-[#FFFBF4] flex flex-col items-center justify-between lg:justify-center relative bottom-0'>
