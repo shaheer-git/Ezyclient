@@ -32,7 +32,7 @@ function SideBar() {
                 </div>
                 <div className='w-full flex items-center justify-center h-3/4'>
                     <ul className='flex flex-col items-start justify-around'>
-                        <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold text-2xl pt-4 active' : 'font-bold text-2xl pt-4' }} to="/">HOME</NavLink>
+                        <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold text-2xl pt-4 active' : 'font-bold text-2xl pt-4' }} to="/" id='homeBtn'>HOME</NavLink>
                         <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold text-2xl pt-4 active' : 'font-bold text-2xl pt-4' }} to="/about">ABOUT</NavLink>
                         <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold text-2xl pt-4 active' : 'font-bold text-2xl pt-4' }} to="/howItWorks">HOW IT WORKS</NavLink>
                         <li style={{ color: 'white', backgroundColor: '#74A1CE' }} className='font-bold rounded-md pl-4 pr-4 pt-2 pb-2 mt-4 text-2xl' onClick={handleButtonClick}>CONTACT</li>

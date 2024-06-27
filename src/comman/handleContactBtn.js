@@ -1,5 +1,3 @@
-import { useNavigate } from 'react-router-dom';
-const history = useNavigate();
 function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);
 }
@@ -10,7 +8,8 @@ export default function handleButtonClick() {
     } else {
         let elem = document.getElementById('form');
         if (!elem) {
-            history('/');
+            let homeBtn = document.getElementById('homeBtn');
+            homeBtn.click();
         } else {
             document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
         }

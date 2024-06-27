@@ -16,7 +16,7 @@ function Navbar() {
         </div>
         <div className='w-1/2 hidden lg:block'>
           <ul className='hidden lg:flex items-center justify-around'>
-            <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold active' : 'font-bold' }} to="/">HOME</NavLink>
+            <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold active' : 'font-bold' }} to="/" id='homeBtn'>HOME</NavLink>
             <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold active' : 'font-bold' }} to="/about">ABOUT</NavLink>
             <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold active' : 'font-bold' }} to="/howItWorks">HOW IT WORKS</NavLink>
             <li style={{ color: 'white', backgroundColor: '#74A1CE' }} className='font-bold rounded-md pl-2 pr-2 h-7' onClick={handleButtonClick}>CONTACT</li>
