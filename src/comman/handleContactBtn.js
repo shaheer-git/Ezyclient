@@ -11,7 +11,7 @@ export default function handleButtonClick() {
             let homeBtn = document.getElementById('homeBtn');
             homeBtn.click();
         } else {
-            document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+            elem.scrollIntoView({ behavior: 'smooth' });
         }
     }
 }

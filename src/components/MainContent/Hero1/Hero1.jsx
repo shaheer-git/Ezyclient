@@ -1,18 +1,25 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import scooter from '../../../assets/pngwing.png'
 import './Hero1.css'
 function Hero1() {
-  Notific.Loading.Dots("Please wait...");
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      Notific.Loading.Remove();
-      document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
-    }, 2000);
 
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = scooter;
+    img.onload = () => setLoaded(true);
     return () => {
       clearTimeout(timer)
     };
-  }, []);
+  }, [scooter]);
+
+  const timer = setTimeout(() => {
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+  }, 2000);
+
+  !loaded ? Notific.Loading.Dots("Loading..") : Notific.Loading.Remove();
+
   return (
     <div className='relative h-[90vh]'>
       <div className='h-3/5 flex pt-8' style={{ backgroundColor: '#FFFBF4' }}>

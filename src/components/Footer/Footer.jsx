@@ -9,6 +9,7 @@ function Footer() {
         setFeedBackText(elem.value);
     };
     const sendFeedback = async (reqTxt) => {
+        Notific.Loading.Dots("Loading..");
         if (feedBackText.length === 0 && !reqTxt) {
             Notific.Notify.Warning("Please enter your valuable feedback!");
             return;
@@ -16,21 +17,28 @@ function Footer() {
         let req = {
             feedBackText: feedBackText || reqTxt
         }
-        let response = await makeAPIcall('POST', '/feedBack/create', req);
-        if (response.status === "success") {
-            Notific.Confirm.Show("Ezy Scrap!", "Thank you for your valuable feedback! 🎉. We're committed to improving and appreciate your input.")
-            setFeedBackText('');
-        } else {
-            Notific.Confirm.Show("Something went wrong!", response.error, "Okay");
+        try {
+            let response = await makeAPIcall('POST', '/feedBack/create', req);
+            if (response.status === "success") {
+                Notific.Confirm.Show("Ezy Scrap!", "Thank you for your valuable feedback! 🎉. We're committed to improving and appreciate your input.")
+                setFeedBackText('');
+            } else {
+                Notific.Confirm.Show("Something went wrong!", response.error, "Okay");
+            }
+        } catch (error) {
+            console.log(error);
         }
+        Notific.Loading.Remove();
     }
     const sendHappyFeedback = async () => {
+        Notific.Loading.Dots("Loading..");
         Notific.Confirm.Ask("Ezy scrap!", "We'd love to hear from you!😊. Please share your positive feedback with us", '', "Ok", "Cancel", async () => {
             let value = document.getElementById('NXConfirmValidationInput').value;
             await sendFeedback(value);
         })
     }
     const sendUnHappyFeedback = async () => {
+        Notific.Loading.Dots("Loading..");
         Notific.Confirm.Ask("Ezy scrap!", "We value your opinion!😊. Please let us know if there's anything you're unhappy with or feel could be improved.", '', "Ok", "Cancel", async () => {
             let value = document.getElementById('NXConfirmValidationInput').value;
             await sendFeedback(value);
