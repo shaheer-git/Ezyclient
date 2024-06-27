@@ -74,7 +74,7 @@ export default (function (root, factory) {
     },
 
     warning: {
-      background: '#eebf31',
+      background: '#5DA1E4',
       textColor: '#fff',
       childClassName: 'warning',
       NotificIconColor: 'rgba(0,0,0,0.2)',
@@ -1115,9 +1115,9 @@ export default (function (root, factory) {
     // check the validation module: begin
     var setValidationInput = '';
     var theAnswer = false;
-    if (hasValidation && (typeof answer === 'string' && answer.length > 0)) {
+    if (hasValidation && (typeof answer === 'string')) {
       theAnswer = answer;
-      setValidationInput = '<div><input id="NXConfirmValidationInput" type="text" style="font-size:' + newConfirmSettings.messageFontSize + ';border-radius: ' + newConfirmSettings.borderRadius + ';" maxlength="' + answer.length + '" autocomplete="off" spellcheck="false" autocapitalize="none" /></div>';
+      setValidationInput = '<div><input id="NXConfirmValidationInput" type="text" style="font-size:' + newConfirmSettings.messageFontSize + ';border-radius: ' + newConfirmSettings.borderRadius + ';"  + " autocomplete="off" spellcheck="false" autocapitalize="none" /></div>';
     }
     // check the validation module: end
 

@@ -6,6 +6,7 @@ function Hero1() {
   useEffect(() => {
     const timer = setTimeout(() => {
       Notific.Loading.Remove();
+      document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
     }, 2000);
 
     return () => {

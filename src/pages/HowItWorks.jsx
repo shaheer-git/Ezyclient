@@ -2,8 +2,9 @@ import { React, useEffect } from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 
+
 function HowItWorks() {
-  // Notific.Loading.Dots("Please wait...");
+  Notific.Loading.Dots("Please wait...");
   useEffect(() => {
     const timer = setTimeout(() => {
       Notific.Loading.Remove();
@@ -14,7 +15,7 @@ function HowItWorks() {
     };
   }, []);
   const gradientStyle = {
-    background: 'linear-gradient(to top, #BFDBF7 55%, #FFFBF4 55%)',
+    background: 'linear-gradient(to top, #BFDBF7 43%, #FFFBF4 43%)',
   };
 
   return (

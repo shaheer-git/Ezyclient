@@ -18,9 +18,10 @@ function Hero2() {
 
     const handleChange = (e) => {
         let { name, value } = e.target;
+        if (!value) return;
         setFormData({
             ...formData,
-            [name]: value,
+            [name]: value.trim().split(' ').join(),
         });
     };
 
@@ -60,7 +61,7 @@ function Hero2() {
                 </div>
                 <div className='w-auto' data-aos="zoom-in-up">
                     <div className="container">
-                        <form onSubmit={handleSubmit} className="form">
+                        <form onSubmit={handleSubmit} className="form" id='form'>
                             <h1 className='text-xl'>Complete this form for a quick call back!</h1>
                             <div className='flex sm:flex-row flex-col items-center'>
                                 <input

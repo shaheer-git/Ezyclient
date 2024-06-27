@@ -1,6 +1,8 @@
 import { React, useState } from 'react'
 import './SideBar.css'
 import { NavLink } from "react-router-dom";
+import handleButtonClick from '../../comman/handleContactBtn'
+
 
 const hide = {
     transform: 'translateX(-100%)',
@@ -33,7 +35,7 @@ function SideBar() {
                         <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold text-2xl pt-4 active' : 'font-bold text-2xl pt-4' }} to="/">HOME</NavLink>
                         <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold text-2xl pt-4 active' : 'font-bold text-2xl pt-4' }} to="/about">ABOUT</NavLink>
                         <NavLink style={{ color: '#74A1CE' }} className={(e) => { return e.isActive ? 'font-bold text-2xl pt-4 active' : 'font-bold text-2xl pt-4' }} to="/howItWorks">HOW IT WORKS</NavLink>
-                        <NavLink style={{ color: 'white', backgroundColor: '#74A1CE' }} className='font-bold rounded-md pl-4 pr-4 pt-2 pb-2 mt-4 text-2xl'>CONTACT</NavLink>
+                        <li style={{ color: 'white', backgroundColor: '#74A1CE' }} className='font-bold rounded-md pl-4 pr-4 pt-2 pb-2 mt-4 text-2xl' onClick={handleButtonClick}>CONTACT</li>
                     </ul>
                 </div>
             </div>
