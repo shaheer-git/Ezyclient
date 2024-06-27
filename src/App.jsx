@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import Home from "./pages/Home";
 import HowItWorks from "./pages/HowItWorks";
@@ -6,7 +6,6 @@ import About from "./pages/About";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { MyContextProvider } from "./services/context";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -29,9 +28,7 @@ function App() {
   ]);
   return (
     <>
-      <MyContextProvider>
         <RouterProvider router={router} />
-      </MyContextProvider>
     </>
   )
 }
