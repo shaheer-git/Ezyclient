@@ -1,20 +1,19 @@
-import { React, useEffect } from 'react'
+import { React, useEffect, useState } from 'react'
 import teamWork from '../assets/teamWork.png'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 
 
 function About() {
-    Notific.Loading.Dots("Please wait...");
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            Notific.Loading.Remove();
-        }, 2000);
+    const [loaded, setLoaded] = useState(false);
 
-        return () => {
-            clearTimeout(timer)
-        };
-    }, []);
+  useEffect(() => {
+    const img = new Image();
+    img.src = teamWork;
+    img.onload = () => setLoaded(true);
+  }, [teamWork]);
+  
+  !loaded ? Notific.Loading.Dots("Loading..") : Notific.Loading.Remove();
     const gradientStyle = {
         background: 'linear-gradient(to top, #BFDBF7 50%, #FFFBF4 50%)',
         height: '100vh',
