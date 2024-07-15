@@ -18,7 +18,7 @@ function Hero2() {
 
     const handleChange = (e) => {
         let { name, value } = e.target;
-        if (!value) return;
+        // if (!value) return;
         setFormData({
             ...formData,
             [name]: value.trim().split(' ').join(),
