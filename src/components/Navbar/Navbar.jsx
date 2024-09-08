@@ -12,7 +12,7 @@ function Navbar() {
       <SideBar />
       <div className='flex items-center justify-between pl-28 pr-28'>
         <div>
-          <img src={logo} alt="Scrap 2 wheeler" className='w-auto' />
+          <img src={logo} alt="car for scrap" className='w-auto' />
         </div>
         <div className='w-1/2 hidden lg:block'>
           <ul className='hidden lg:flex items-center justify-around'>

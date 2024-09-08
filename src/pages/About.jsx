@@ -26,7 +26,7 @@ function About() {
             <Navbar />
             <div className='' style={gradientStyle}>
                 <div className='flex justify-center items-center lg:flex-row flex-col'>
-                    <img src={teamWork} className='md:w-max h-[250px] lg:h-[400px]' />
+                    <img src={teamWork} className='md:w-max h-[250px] lg:h-[400px]' alt='car scrap near me' />
                     <div className='mr-2 ml-2'>
                         <div className='h-auto lg:h-1/2 bg-[#FFFBF4] rounded-3xl'>
                             <h1 className='font-semibold text-lg md:text-xl lg:text-2xl text-[#5DA1E4] p-4 lg:p-8'>About Us</h1>

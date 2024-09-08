@@ -49,7 +49,7 @@ function Hero1() {
         </div>
       </div>
       <div className='h-2/5 flex items-start justify-center' style={{ backgroundColor: '#BFDBF7' }}>
-        <img src={scooter} alt="2 wheeler scrap bangalore" className='absolute top-1/3 sm:w-1/2 w-max' />
+        <img src={scooter} alt="Scrap A bike" className='absolute top-1/3 sm:w-1/2 w-max' />
       </div>
     </div>
   )

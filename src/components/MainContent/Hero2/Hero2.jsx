@@ -57,7 +57,7 @@ function Hero2() {
         <div style={{ backgroundColor: '#BFDBF7' }} className='h-fit lg:h-screen flex justify-center items-center'>
             <div className='flex flex-col-reverse lg:flex-row items-center justify-around h-full w-full'>
                 <div data-aos="zoom-in-up">
-                    <img src={Mater} alt="scooter scrap in bangalore" className='max-w-full h-auto lg:max-h-96' />
+                    <img src={Mater} alt="car scrap dealers near me" className='max-w-full h-auto lg:max-h-96' />
                 </div>
                 <div className='w-auto' data-aos="zoom-in-up">
                     <div className="container">
