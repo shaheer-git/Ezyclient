@@ -67,7 +67,7 @@ function Footer() {
         Notific.Loading.Remove();
     }
     return (
-        <div className='h-auto lg:h-[50vh] w-full lg:w-screen bg-[#FFFBF4] flex flex-col items-center justify-between lg:justify-center relative bottom-0'>
+        <div className='h-auto lg:h-[50vh] w-full lg:w-screen bg-[#FFFBF4] flex flex-col items-center justify-between lg:justify-center relative bottom-0' data-aos="fade-up">
             <div className='flex items-center lg:flex-row flex-col justify-between w-5/6 lg:pt-[10px]'>
                 <div className='flex flex-col-reverse lg:flex-col items-center justify-between'>
                     <div className='flex'>
