@@ -5,7 +5,7 @@ function Hero4() {
         <div className='h-fit' style={{ backgroundColor: '#BFDBF7' }}>
             <div className='h-2/6 flex flex-col items-center justify-around'>
                 <div className='flex items-center justify-center'>
-                    <h1 className='font-semibold text-3xl lg:text-6xl pt-10' style={{ color: '#FFFBF4' }}>It's simple to start.</h1>
+                    <h1 className='font-semibold text-3xl lg:text-6xl pt-10 m-2' style={{ color: '#FFFBF4' }}>It's simple to start.</h1>
                 </div>
                 <div className='flex items-center justify-center text-center'>
                     <p className='font-semibold text-lg lg:w-4/6' style={{ color: '#153E67' }}>Say goodbye to scrap problems! Our hassle-free process offers instant quotes and free doorstep collection, making it easy to get started.</p>

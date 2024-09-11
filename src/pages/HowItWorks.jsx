@@ -1,6 +1,9 @@
 import { React, useEffect } from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
+import { NavLink } from 'react-router-dom';
+import '../components/Navbar/Navbar.css'
+
 
 
 function HowItWorks() {
@@ -64,6 +67,11 @@ function HowItWorks() {
               <h2 className="font-semibold text-[#5DA1E4] text-center text-lg lg:text-xl p-2">Get paid instantly, ensuring a hassle-free and rewarding experience.</h2>
             </div>
           </div>
+        </div>
+        <div className='flex items-center justify-center mb-4'>
+          <span className='font-bold rounded-md p-2 h-7 bg-[#FFFBF4] hover:bg-[#fffbf48a] text-[#5DA1E4] hover:text-[#BFDBF7] h-8 flex items-center justify-center'>
+            <NavLink to="/about">know more</NavLink>
+          </span>
         </div>
       </div>
       <Footer />
