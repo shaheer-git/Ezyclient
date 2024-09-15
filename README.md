@@ -1,8 +1,24 @@
-# React + Vite
+# Ezyscrap
+Welcome to Ezyscrap – India's leading online vehicle scrap solution! We provide a hassle-free, environmentally friendly way to scrap your vehicles, offering a seamless process from doorstep pickup to the completion of all necessary documentation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Features
+Easy Booking: Scrap your vehicle with just a few clicks via our online platform.
+Doorstep Pickup: Convenient vehicle collection service from your location.
+Fair Pricing: Get competitive, transparent offers for your vehicle.
+Environmentally Responsible: We ensure that your vehicle is scrapped in compliance with eco-friendly practices.
+Instant Assistance: Our customer support team is available to assist with any questions throughout the process.
 
-Currently, two official plugins are available:
+- Services Offered
+Car and Bike Scrapping
+Commercial Vehicle Scrapping
+Scrap Certificate & Documentation Assistance
+Eco-Friendly Vehicle Recycling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- How It Works
+Book Online: Submit your vehicle details on our website.
+Get Quote: Receive a transparent offer based on the vehicle's condition.
+Pickup & Payment: We'll pick up the vehicle from your location and complete payment.
+Recycling: The vehicle is responsibly scrapped at certified facilities.
+
+- Contact Us
+For any inquiries, reach us at infoezyscrap@gmail.com or visit [EzyScrap](https://ezyscrap.com)
