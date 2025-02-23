@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import HowItWorks from "./pages/HowItWorks";
 import About from "./pages/About";
 import NoteFound from "./pages/NoteFound";
+import TermsAndConditions from "./pages/TermsAndConditions";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -25,6 +26,10 @@ function App() {
     {
       path: "/about",
       element: <About />,
+    },
+    {
+      path: "/T&C",
+      element: <TermsAndConditions />,
     },
     {
       path:"*",
